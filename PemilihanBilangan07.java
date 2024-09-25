@@ -9,10 +9,6 @@ public class PemilihanBilangan07 {
 
 
         //pengecekan angka genap/ganjil
-        if(angka % 2 == 0){
-            System.out.println("Angka " + angka + " termasuk bilangan genap");
-        }else{
-            System.out.println("Angka " + angka + " termasuk bilangan ganjil");
-        }
+        System.out.print(angka % 2 == 0 ? "Angka " + angka + " termasuk bilangan genap" : "Angka " + angka + " termasuk bilangan ganjil");
     }
 }
