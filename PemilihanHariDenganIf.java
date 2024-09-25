@@ -9,23 +9,13 @@ public class PemilihanHariDenganIf {
         System.out.print("Input day number: ");
         day = sc.nextInt();
 
-        switch (day) {
-            case 1:
-            case 2:
-            case 3:
-            case 4:
-            case 5:{
-                dayType = "Weekday";
-            } 
-            break;
-            case 6:
-            case 7:{
-                dayType = "Weekend";
-            }
-            break;
-            default:
-            dayType = "Invalid Number!";
-                break;
+        if (day > 0 && day <= 5){
+
+            dayType = "Weekday";
+        }else if(day == 6 || day == 7){
+            dayType = "Weekend";
+        }else{
+            dayType = "Invalid Number for day!";
         }
 
         System.out.println(day + " is a " + dayType);
